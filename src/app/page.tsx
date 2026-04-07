@@ -72,7 +72,7 @@ export default function Home() {
     const [active, setActive] = useState(0);
     const [fade, setFade] = useState(true);
 
-    const handleSwitch = (index) => {
+    const handleSwitch = (index: number) => {
         if (index === active) return;
         setFade(false);
         setTimeout(() => {
@@ -130,7 +130,7 @@ export default function Home() {
 
                         <div className="flex flex-col lg:py-16 gap-3 lg:w-full mt-auto">
                             <p className="text-[0.5rem] sm:text-sm lg:text-base">
-                                The Glowstick Agency is a culture-driven marketing and creative agency for brands that want to connect with the audiences that actually matter. We don't work from the outside looking in. We're already inside.
+                                The Glowstick Agency is a culture-driven marketing and creative agency for brands that want to connect with the audiences that actually matter. We don&apos;t work from the outside looking in. We&apos;re already inside.
                             </p>
                             <p className=" text-[0.5rem] sm:text-sm lg:text-base">
                                 We also work with global brands who want to activate campaigns to connect with younger audiences in Nigeria.
@@ -215,7 +215,7 @@ export default function Home() {
                     <div className="w-full flex justify-center items-center">
                         <p className="w-full lg:w-2/3 text-xs lg:text-xl text-left font-semibold">
                             We have direct access to an active, culturally engaged community of over 400,000 young people.
-                            This gives us something most agencies can't manufacture: real-time insight into audience behaviour,
+                            This gives us something most agencies cant manufacture: real-time insight into audience behaviour,
                             emerging trends, and cultural shifts before they become mainstream.
                         </p>
                     </div>
@@ -275,7 +275,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 lg:gap-5 py-6 px-4 lg:py-10 lg:px-8 border-[#261420] border rounded-xl justify-center items-center w-full lg:w-auto">
                         <div className="w-full lg:w-2/3">
                             <p className="text-l lg:text-2xl text-center font-semibold leading-tight">
-                                Want to connect with global audiences who are actually engaged, let's talk.
+                                Want to connect with global audiences who are actually engaged, let&apos;s talk.
                             </p>
                         </div>
                         <div>
