@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+*{
+    font-family: "Geist", sans-serif;
+}
+/* ── VENN DIAGRAM ── */
+#venn-section {
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+}
+
+#venn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/* outer wrapper — sized to the scaled dimensions so layout sees correct height */
+#venn-scaler {
+    position: relative;
+    width: 336px;   /* 560 * 0.6 */
+    height: 336px;
+}
+
+/* inner full-size diagram, scaled from top-left */
+#venn-diagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 560px;
+    height: 560px;
+    transform: scale(0.6);
+    transform-origin: top left;
+}
+
+#venn-culture,
+#venn-young,
+#venn-brands {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+#venn-culture {
+    top: 40px;
+    left: 0;
+    background-color: #8F2987;
+}
+
+#venn-young {
+    top: 40px;
+    right: 0;
+    background-color: #261420;
+}
+
+#venn-brands {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #261420;
+}
+
+#venn-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#venn-label {
+    font-weight: 700;
+    font-size: 1.25rem;
+    z-index: 10;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+/* ── sm (≥ 640px) ── */
+@media (min-width: 640px) {
+    #venn-scaler {
+        width: 420px;   /* 560 * 0.75 */
+        height: 420px;
+    }
+
+    #venn-diagram {
+        transform: scale(0.75);
+    }
+}
+
+/* ── lg (≥ 1024px) ── */
+@media (min-width: 1024px) {
+    #venn-section {
+        padding: 2rem 4rem;
+    }
+
+    #venn-scaler {
+        width: 560px;
+        height: 560px;
+    }
+
+    #venn-diagram {
+        transform: scale(1);
+    }
+}
