@@ -101,14 +101,18 @@ export default function Home() {
         <div className="main">
 
             {/* ── HERO ── */}
-            {/* ── HERO ── */}
-            <section className="px-6 py-6 lg:px-16 lg:py-8">
+            <section
+                className="px-6 py-6 lg:px-16 lg:py-8"
+                style={{
+                    background: "linear-gradient(135deg, #f0ece8 0%, #e8e4f0 40%, #ddb8d8 75%, #c9a0d0 100%)",
+                }}
+            >
                 <div className="flex justify-between min-h-[30vh] lg:h-screen gap-4">
 
                     {/* Left column */}
                     <div className="w-1/2 flex flex-col gap-20 lg:gap-85">
                         <figure className="w-20 lg:w-32">
-                            <img src={heroLogo} alt="logo" className="w-full"/>
+                            <img src={heroLogo} alt="logo" className="w-full" />
                         </figure>
                         <div className="flex flex-col gap-4">
                             <h2 className="text-xs sm:text-3xl lg:text-6xl font-bold leading-tight">
@@ -127,19 +131,18 @@ export default function Home() {
 
                     {/* Right column */}
                     <div className="w-1/2 flex flex-col gap-5 min-h-full lg:h-full justify-between">
-
                         <div className="flex flex-col lg:py-16 gap-3 lg:w-full mt-auto">
                             <p className="text-[0.5rem] sm:text-sm lg:text-base">
                                 The Glowstick Agency is a culture-driven marketing and creative agency for brands that want to connect with the audiences that actually matter. We don&apos;t work from the outside looking in. We&apos;re already inside.
                             </p>
-                            <p className=" text-[0.5rem] sm:text-sm lg:text-base">
+                            <p className="text-[0.5rem] sm:text-sm lg:text-base">
                                 We also work with global brands who want to activate campaigns to connect with younger audiences in Nigeria.
                             </p>
                         </div>
                     </div>
+
                 </div>
-            </section>
-            {/* ── STATS + QUOTE ── */}
+            </section>            {/* ── STATS + QUOTE ── */}
             <section className="px-6 py-8 lg:px-12 lg:py-8 bg-[#261420] flex justify-center items-center">
                 <div className="flex flex-col gap-16 lg:gap-40 w-full lg:w-3/4">
                     {/* Stats */}
