@@ -104,7 +104,7 @@ export default function Home() {
             <section
                 className="px-6 py-6 lg:px-16 lg:py-8"
                 style={{
-                    background: "linear-gradient(135deg, #f0ece8 0%, #e8e4f0 40%, #ddb8d8 75%, #c9a0d0 100%)",
+                    background: "radial-gradient(circle at 100% 0%, #c9a0d0 0%, #ddb8d8 30%, #f0ece8 65%, #f0ece8 100%)",
                 }}
             >
                 <div className="flex justify-between min-h-[30vh] lg:h-screen gap-4">
@@ -142,7 +142,9 @@ export default function Home() {
                     </div>
 
                 </div>
-            </section>            {/* ── STATS + QUOTE ── */}
+            </section>
+            {/* ── STATS + QUOTE ── */}
+
             <section className="px-6 py-8 lg:px-12 lg:py-8 bg-[#261420] flex justify-center items-center">
                 <div className="flex flex-col gap-16 lg:gap-40 w-full lg:w-3/4">
                     {/* Stats */}
